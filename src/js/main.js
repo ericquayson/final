@@ -1,6 +1,15 @@
 ;(function () {
 
-  var app = angular.module('ncpride', []);
+  angular.module('ncpride', ['ngRoute'], function($routeProvider) {
+    $routeProvider
+    .when('/', {
+      redirectTo: '/landing'
+    })
+    .when('/landing', {
+      templateUrl: 'partials/landing.html',
+    })
+  });
+
 
 
 })();

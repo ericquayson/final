@@ -14,26 +14,28 @@
   <link rel="stylesheet" href="css/main.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-  
+
 </head>
 <body>
   <header class="standard">
     <a class="logo" href="#/signup"></a>
     <img alt="NC Pride" src="img/pridebanner.jpg">
   </header>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
       <ul class="nav-landing">
-        <li class="navbar-links"><a id="home" href="#">Home</a></li>
-        <li class="navbar-links"><a id="Pride-2015" href="#">Pride 2015</a></li>
-        <li class="navbar-links"><a id="GLBT" href="#">GLBT NC/Travel</a></li>
-        <li class="navbar-links"><a id="History" href="#">History</a></li>
-        <li class="navbar-links"><a id="Pride-Lib" href="#">Pride Library</a></li>
+        <li class="navbar-links active"><a id="home" href="#/home">Home</a></li>
+        <li class="navbar-links"><a id="NCPride-BudLight-Nightfest" href="#/Nightfest">BudLight Nightfest</a></a></li>
+        <li class="navbar-links"><a id="Pride-2015" href="#/Pride">Pride 2015</a></li>
+        <li class="navbar-links"><a id="Pride Shop" href="#/GLBTApparel">GLBT Apparel</a></li>
+        <li class="navbar-links"><a id="History" href="#/History">History</a></li>
       </ul>
     </div>
   </nav>
+  <div class="heroimage">
+    <img src="img/priderun.jpg">
 
-  <!-- need to add the header which will be the nagivation for each page -->
+  </div>
 
   <main ng-app="ncpride" class="container">
     <ng-view>
@@ -42,8 +44,11 @@
 
   </main> <!-- end of .container -->
 
+  <footer class="partners">
+    <h3 id="footer-text">Sponsors</h3>
+  </footer>
   <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   <script src="../bower_components/angular/angular.js"></script>
   <script src="../bower_components/angular-route/angular-route.js"></script>
   <script src="js/plugins.js"></script>

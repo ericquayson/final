@@ -102,6 +102,7 @@ $fa-font-path: '../../bower_components/font-awesome/fonts';
 //Sign up work flow
 @import "landing";
 @import "register";
+@import "nightfest";
 
 // responsive designs
 
@@ -120,6 +121,7 @@ body {
   main.container {
     width: 100%;
     max-width: 380px;
+
   }
 }
 
@@ -134,26 +136,61 @@ ul.nav-landing {
   }
 }
 
+.heroimage {
+  margin-top: -20px;
+  width: 100%;
+  height: auto;
+
+}
 //navbar hover effect
+.navbar {
+  border-radius: 1px solid #666666;
+  opacity: .8;
+}
+
+.navbar-links {
+  text-decoration: none !important;
+  color: Black !important;
+}
+.navbar-custom {
+  background-color: #666666 !important;
+  border-radius: 1px solid #666666;
+}
+
+.nav-landing {
+  background: #666666;
+  font-family: Oswald;
+  font-size: 15pt;
+  color: #FFFFFF !important;
+}
+
+
+a {
+  color: #FFFFFF !important;
+}
 
 #home:hover {
-  color: red;
+  color: #FF0000 !important;
 }
 
 #Pride-2015:hover {
-  color: orange;
+  color: #FF7F00 !important;
 }
 
 #GLBT:hover {
-  color: yellow;
+  color: #FFFF00 !important;
 }
 
 #History:hover {
-  color: green;
+  color: #228B22 !important;
 }
 
 #Pride-lib:hover {
-  color: blue;
+  color: #0B4FE1 !important;
+}
+
+#home-link:hover {
+  color: #FF0000;
 }
 header.standard {
 
@@ -164,6 +201,24 @@ header.standard {
   color: white;
   display: block;
 
+}
+
+.heroimage {
+  background-color: black;
+}
+
+.partners {
+  background-color: black;
+  width: 100%;
+  height: 500px;
+}
+
+#footer-text {
+
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15pt;
+  font: Oswald;
 }
 /* ==========================================================================
    Helper classes
