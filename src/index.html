@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>NC Pride -- Welcome!</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  
+</head>
+<body>
+  <header class="standard">
+    <a class="logo" href="#/signup"></a>
+    <img alt="NC Pride" src="img/pridebanner.jpg">
+  </header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav-landing">
+        <li class="navbar-links"><a id="home" href="#">Home</a></li>
+        <li class="navbar-links"><a id="Pride-2015" href="#">Pride 2015</a></li>
+        <li class="navbar-links"><a id="GLBT" href="#">GLBT NC/Travel</a></li>
+        <li class="navbar-links"><a id="History" href="#">History</a></li>
+        <li class="navbar-links"><a id="Pride-Lib" href="#">Pride Library</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- need to add the header which will be the nagivation for each page -->
+
+  <main ng-app="ncpride" class="container">
+    <ng-view>
+
+    </ng-view>
+
+  </main> <!-- end of .container -->
+
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-route/angular-route.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='https://www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+  </body>
+  </html>
